@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -43,13 +43,12 @@
         .profile-container {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: justify;
             gap: 20px;
             margin-bottom: 30px;
         }
 
         .profile-img {
-            border-radius: 50%;
             width: 120px;
             height: 120px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -86,7 +85,7 @@
 
         img {
             border: 3px solid #4CAF50;
-            border-radius: 8px;
+            border-radius: 5px; /* Keep it rectangular or square */
         }
 
         @media (max-width: 768px) {
@@ -116,20 +115,168 @@
             </div>
         </div>
 
-        <div class="paragraph">
+        <div class="profile-container">
             <div class="text-content">
                 <p>My journey blends a deep appreciation for cricket and a fascination for emerging technologies. While I enjoy coding and designing <strong>innovative solutions</strong>, I find equal joy in analyzing cricket strategies and celebrating the spirit of the game. Whether it's understanding 
                 <span class="highlight">complex algorithms</span> or mastering a perfect cover drive, I believe in learning with passion and enthusiasm.</p>
             </div>
         </div>
 
-        <div class="paragraph">
+        <div class="profile-container">
             <div class="text-content">
                 <p>Outside of cricket and tech, I enjoy traveling, connecting with people, and exploring new opportunities. My guiding principle is to remain <strong>curious</strong> and embrace growth in every aspect of life. If you'd like to discuss cricket, technology, or collaborate on an exciting idea, feel free to reach out. Let's create something 
                 <span class="highlight">extraordinary</span> together!</p>
             </div>
         </div>
     </div>
-    <p>Dummy</p>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Sanjay A J</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            background: #fff;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 900px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #1a1a1a;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #3498db;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+    width: 200px;
+    height: 200px; /* Make the height equal to width to keep the aspect ratio consistent */
+    border-radius: 50%; /* Fully round shape */
+    border: 2px solid #2e80cc; /* Slightly thicker border for better visibility */
+    margin: 20px 0;
+    object-fit: cover; /* Ensures the image fits nicely inside the circular container */
+    transition: transform 0.3s ease;
+
+}
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        .content-section {
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .content-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+            color: #666;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 25px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .profile-img {
+                width: 200px;
+                height: 120px;
+            }
+
+            .content-section p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sanjay A J</h1>
+        <h2>Cricket Enthusiast | Tech Explorer | Lifelong Learner</h2>
+
+        <img src="img.png" alt="Sanjay A J's Profile Picture" class="profile-img">
+
+        <div class="content-section">
+            <p>Hello! I am <strong>Sanjay A J</strong>, a passionate cricket enthusiast and a tech explorer. I am driven by the love for the game and the endless possibilities in the tech world. Through cricket, I’ve learned the importance of <span class="highlight">teamwork</span>, <span class="highlight">resilience</span>, and working towards excellence. In technology, I thrive on the challenge of solving problems and exploring new innovations.</p>
+        </div>
+
+        <div class="content-section">
+            <p>My passion for both cricket and technology defines my journey. Whether it’s developing cutting-edge <strong>software solutions</strong> or analyzing cricket match strategies, I am always looking to improve and grow. I believe that no challenge is too big if approached with the right mindset and determination.</p>
+        </div>
+
+        <div class="content-section">
+            <p>When I’m not immersed in cricket or tech, I enjoy exploring new places, meeting interesting people, and embracing new experiences. I am always open to learning and discovering new opportunities. Feel free to connect if you'd like to discuss cricket, tech, or collaborate on exciting projects!</p>
+        </div>
+
+        <a href="mailto:sanjay@example.com" class="button">Get in Touch</a>
+    </div>
+
 </body>
 </html>
