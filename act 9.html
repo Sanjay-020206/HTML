@@ -6,90 +6,82 @@
     <title>About Me</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f4f6f9;
             margin: 0;
             padding: 0;
             color: #333;
         }
 
         .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 50px;
-            transition: all 0.3s ease-in-out;
+            width: 90%;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            line-height: 1.6;
         }
 
-        .container:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .main-heading {
+        h1 {
             text-align: center;
-            color: #2C3E50;
-            font-size: 36px;
+            color: #2c3e50;
+            font-size: 32px;
             font-weight: bold;
             margin-bottom: 10px;
         }
 
-        .sub-heading {
+        h2 {
             text-align: center;
-            color: #27AE60;
+            color: #27ae60;
             font-size: 18px;
             font-style: italic;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
-        .paragraph {
-            margin-bottom: 25px;
-            padding: 20px;
-            background-color: #ecf0f1;
-            border-radius: 8px;
+        .profile-container {
             display: flex;
-            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
             gap: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .paragraph:hover {
-            transform: scale(1.02);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
         }
 
         .profile-img {
             border-radius: 50%;
             width: 120px;
             height: 120px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .text-content {
+            max-width: 600px;
             font-size: 14px;
-            color: #34495E;
-            line-height: 1.6;
+            color: #34495e;
             text-align: justify;
         }
 
         .highlight {
-            color: #95A5A6;
+            color: #95a5a6;
         }
 
-        .paragraph:before {
-            content: 'Vertical Text Example';
-            position: absolute;
-            top: 20px;
-            left: -35px;
-            transform: rotate(90deg);
-            font-size: 16px;
-            font-family: 'Courier New', Courier, monospace;
-            color: #7F8C8D;
-            font-weight: bold;
+        .paragraph {
+            margin-bottom: 20px;
+        }
+
+        .paragraph:last-child {
+            margin-bottom: 0;
+        }
+
+        .paragraph p {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .paragraph:hover {
+            background-color: #ecf0f1;
+            transition: background-color 0.3s ease;
         }
 
         img {
@@ -98,17 +90,13 @@
         }
 
         @media (max-width: 768px) {
-            .container {
-                width: 90%;
-            }
-
-            .paragraph {
+            .profile-container {
                 flex-direction: column;
                 align-items: center;
             }
 
-            .profile-img {
-                margin-bottom: 15px;
+            .text-content {
+                text-align: center;
             }
         }
     </style>
@@ -116,29 +104,29 @@
 <body>
 
     <div class="container">
-        <h1 class="main-heading">Sanjay A J</h1>
-        <h2 class="sub-heading">Cricket Enthusiast | Tech Explorer | Lifelong Learner</h2>
+        <h1>Sanjay A J</h1>
+        <h2>Cricket Enthusiast | Tech Explorer | Lifelong Learner</h2>
         
-        <div class="paragraph">
+        <div class="profile-container">
             <img src="my.jpg" alt="Sanjay A J's Picture" class="profile-img">
             <div class="text-content">
-                <p>Hello! I am <b>Sanjay A J</b>, a passionate cricket enthusiast and a tech explorer. My love for cricket goes beyond the game itself; it has taught me the value of 
-                <i class="highlight">teamwork</i>, <b>resilience</b>, and the pursuit of excellence. On the field or in the world of technology, I thrive on 
-                <i class="highlight">challenges</i> and strive to achieve my goals with dedication and determination.</p>
+                <p>Hello! I am <strong>Sanjay A J</strong>, a passionate cricket enthusiast and a tech explorer. My love for cricket goes beyond the game itself; it has taught me the value of 
+                <span class="highlight">teamwork</span>, <strong>resilience</strong>, and the pursuit of excellence. On the field or in the world of technology, I thrive on 
+                <span class="highlight">challenges</span> and strive to achieve my goals with dedication and determination.</p>
             </div>
         </div>
 
         <div class="paragraph">
             <div class="text-content">
-                <p>My journey blends a deep appreciation for cricket and a fascination for emerging technologies. While I enjoy coding and designing <b>innovative solutions</b>, I find equal joy in analyzing cricket strategies and celebrating the spirit of the game. Whether it's understanding 
-                <i class="highlight">complex algorithms</i> or mastering a perfect cover drive, I believe in learning with passion and enthusiasm.</p>
+                <p>My journey blends a deep appreciation for cricket and a fascination for emerging technologies. While I enjoy coding and designing <strong>innovative solutions</strong>, I find equal joy in analyzing cricket strategies and celebrating the spirit of the game. Whether it's understanding 
+                <span class="highlight">complex algorithms</span> or mastering a perfect cover drive, I believe in learning with passion and enthusiasm.</p>
             </div>
         </div>
 
         <div class="paragraph">
             <div class="text-content">
-                <p>Outside of cricket and tech, I enjoy traveling, connecting with people, and exploring new opportunities. My guiding principle is to remain <b>curious</b> and embrace growth in every aspect of life. If you'd like to discuss cricket, technology, or collaborate on an exciting idea, feel free to reach out. Let's create something 
-                <i class="highlight">extraordinary</i> together!</p>
+                <p>Outside of cricket and tech, I enjoy traveling, connecting with people, and exploring new opportunities. My guiding principle is to remain <strong>curious</strong> and embrace growth in every aspect of life. If you'd like to discuss cricket, technology, or collaborate on an exciting idea, feel free to reach out. Let's create something 
+                <span class="highlight">extraordinary</span> together!</p>
             </div>
         </div>
     </div>
